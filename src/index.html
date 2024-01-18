@@ -12,19 +12,19 @@
 
 </head>
 <body class="dark:bg-slate-900 bg-white">
-  <div class="grid grid-cols-12 gap-4">
+  <div class="grid grid-cols-12 gap-4 relative">
     
 
 
-    <div class="mx-1 my-12 px-10 py-5 col-span-1 navigation" id="navigation">
-      <div class="collaps-button">
+    <div class="max-[639px]:hidden sm:hidden md:hidden lg:relative xl:relative 2xl:relative lg:block xl:block 2xl:block block md:col-span-1 lg:col-span-1 xl:col-span-1 sm:order-1 navigation" id="navigation">
+      <div class="mx-1 my-12 px-2 py-5 lg:fixed xl:fixed 2xl:fixed collaps-button">
         <div class="mx-1 w-10 h-10 px-2.5 py-1.5 border-2 rounded-full text-gray-50  border-emerald-50 hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
           <i class="fa-solid fa-bars-staggered"></i>
         </div>
       </div>
 
-      <div class="mt-10 navbar">
-        <ul class="mt-52 px-2 py-1 border border-gray-50 rounded-full text-gray-50 text-sm overflow-hidden">
+      <div class="mx-3 w-14 my-12 py-5 lg:fixed xl:fixed 2xl:fixed navbar">
+        <ul class="mt-32 lg:mt-10 px-2 py-1 border border-gray-50 rounded-full text-gray-50 text-sm overflow-hidden">
           <li class="px-3 py-3 hover:text-emerald-500  transition duration-0 hover:duration-500">
             <a href="#home" title="Home" class="scroll-smooth">
               <i class="fa-solid fa-house"></i>
@@ -80,11 +80,11 @@
           </li>
         </ul>
       </div>
-    </div>
+  </div>
 
 
 
-    <div class="col-span-8 text-gray-50 content" id="content">
+    <div class="max-[639px]:col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-7 xl:col-span-8 max-[639px]:order-2 sm:order-2 md:order-3 lg:order-2 xl:order-2 text-gray-50 content" id="content">
       <section class="mt-10 px-10 py-5 intro">
         <a target="_blank" rel="noopener noreferrer"  id="#home">
           <span class="px-5 py-1.5 border border-gray-50 rounded-full text-xs">
@@ -94,18 +94,18 @@
         </a>
         
 
-        <h1 class="pr-10 py-20 font-mono text-7xl font-black">
+        <h1 class="pr-10 py-20 max-[639px]:py-7 sm:py-7 md:py-10 max-[639px]:pr-1 sm:pr-1 md:pr-1 font-mono max-[639px]:text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-7xl text-7xl font-black">
           Hi,<br>
           I am <strong class="text-emerald-500">ANTU PAUL</strong>.<br>
           Wordpress & Shopify<br>
           Designer and Developer
         </h1>
 
-        <p class="pr-60 pb-10 text-gray-500">Dedicated to the art of web design and front-end development, I specialize in crafting seamless and user-friendly experiences. My passion lies in developing outstanding software that positively impacts the lives of those in my circle.</p>
+        <p class="pr-60 max-[639px]:pr-10 sm:pr-10 md:pr-20 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg lg:pr-40 pb-10 text-gray-500">Dedicated to the art of web design and front-end development, I specialize in crafting seamless and user-friendly experiences. My passion lies in developing outstanding software that positively impacts the lives of those in my circle.</p>
 
         <div class="flex justify-end relative project-indicator">
           <div class="project-indicator-animator">
-            <img src="./images/my-projects.png" class="animate-spin rounded-full mr-1" alt="My projects" srcset="">
+            <img src="./images/my-projects.png" class="rounded-full mr-1" alt="My projects" srcset="">
           </div>
           <div class="absolute top-16 right-16 project-indicator-icon">
             <i class="fa-solid fa-angles-down text-2xl animate-bounce"></i>
@@ -114,12 +114,12 @@
 
         <div class="grid grid-cols-5 gap-4 experience-project-counter">
             <div class="experience">
-              <h2 class="font-mono text-7xl font-black text-emerald-500">7+</h2>
-              <p class="py-2 text-gray-500 capitalize">Years of Experience</p>
+              <h2 class="font-mono max-[639px]:text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-7xl text-7xl font-black text-emerald-500">7+</h2>
+              <p class="py-2 max-[639px]:text-xs sm:text-xs md:text-sm lg:text-sm xl:text-sm text-lg text-gray-500 capitalize">Years of Experience</p>
             </div>
             <div class="project">
-              <h2 class="font-mono text-7xl font-black text-emerald-500">172+</h2>
-              <p class="py-2 text-gray-500 capitalize">Projects completed on 21 countries</p>
+              <h2 class="font-mono max-[639px]:text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-7xl text-7xl font-black text-emerald-500">172+</h2>
+              <p class="py-2 max-[639px]:text-xs sm:text-xs md:text-sm lg:text-sm xl:text-sm text-lg text-gray-500 capitalize">Projects completed on 21 countries</p>
             </div>
         </div>
       </section>
@@ -127,45 +127,46 @@
 
 
 
-      <section class="mt-20 px-10 py-10 about-antu" id="about">
+      <section class="mt-20 max-[639px]:mt-5 sm:mt-5 md:mt-5 lg:mt-20 px-10 py-10 about-antu" id="about">
         <span class="px-5 py-1.5 border border-gray-50 rounded-full text-xs">
           <i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;
           ABOUT
         </span>
 
-        <h2 class="pr-10 py-10 font-sans text-5xl font-medium">Every great design begin with<br> an even <span class="text-emerald-500">better story</span></h2>
+        <h2 class="pr-10 max-[639px]:pr-5 sm:pr-5 md:pr-5 lg:pr-10 py-10 font-sans text-5xl max-[639px]:text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-medium">Every great design begin with an even <span class="text-emerald-500">better story</span></h2>
 
-        <p class="pr-60 pb-10 text-lg text-gray-500">Since beginning my journey as a freelance designer nearly 5 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chopsone design problem at a time.</p>
+        <p class="pr-60 max-[639px]:pr-8 sm:pr-8 md:pr-8 lg:pr-40 pb-10 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg text-gray-500">Since beginning my journey as a freelance designer nearly 5 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chopsone design problem at a time.</p>
       </section>
 
 
 
 
-      <section class="mt-20 px-10 pb-10 services" id="services">
+      <section class="mt-20 max-[639px]:mt-5 sm:mt-5 md:mt-5 lg:mt-20 px-10 pb-10 services" id="services">
         <span class="px-5 py-1.5 border border-gray-50 rounded-full text-xs uppercase">
           <i class="fa-solid fa-toolbox"></i></i>&nbsp;&nbsp;&nbsp;
           Services
         </span>
 
-        <h2 class="pr-10 py-10 font-sans text-5xl font-medium">Services</h2>
+        <h2 class="pr-10 py-10 font-sans text-5xl max-[639px]:text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-medium">Services</h2>
 
-        <div class="grid grid-cols-3 gap-20">
-          <div class="px-8 py-11 border border-emerald-500 hover:bg-emerald-500 rounded-xl hover:text-slate-900 web-design">
-            <i class="fa-solid fa-pen-ruler text-5xl"></i>
-            <h3 class="py-3 text-xl">UI/UX Design</h3>
-            <p class="text-lg text-gray-500">I Design website UI/UX using Figma, XD, and Photoshop from scratch.</p>
+        <div class="grid max-[639px]:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 max-[639px]:gap-4 sm:gap-4 md:gap-4 lg:gap-4 gap-20">
+
+          <div class="px-8 max-[639px]:px-8 sm:px-8 md:px-4 lg:px-4 xl:px-8 py-11 max-[639px]:py-11 sm:py-11 md:py-10 lg:py-6 xl:py-11 border border-emerald-500 hover:bg-emerald-500 rounded-xl hover:text-slate-900 web-design">
+            <i class="fa-solid fa-pen-ruler text-5xl lg:text-3xl"></i>
+            <h3 class="py-3 max-[639px]:text-lg sm:text-lg md:text-lg lg:text-lg text-xl">UI/UX Design</h3>
+            <p class="max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg text-gray-500">I Design website UI/UX using Figma, XD, and Photoshop from scratch.</p>
           </div>
 
-          <div class="px-8 py-11 border border-emerald-500 hover:bg-emerald-500 rounded-xl hover:text-slate-900 web-development">
-            <i class="fa-solid fa-desktop text-5xl"></i>
-            <h3 class="py-3 text-xl">Web Design & Development</h3>
-            <p class="text-lg text-gray-500">I Design website UI/UX using Figma, XD, and Photoshop from scratch.</p>
+          <div class="px-8 max-[639px]:px-8 sm:px-8 md:px-4 lg:px-4 xl:px-8 py-11 max-[639px]:py-11 sm:py-11 md:py-10 lg:py-6 xl:py-11 border border-emerald-500 hover:bg-emerald-500 rounded-xl hover:text-slate-900 web-development">
+            <i class="fa-solid fa-desktop text-5xl lg:text-3xl"></i>
+            <h3 class="py-3 text-xl max-[639px]:text-lg sm:text-lg md:text-lg lg:text-lg">Web Design & Development</h3>
+            <p class="max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg text-gray-500">I Design website UI/UX using Figma, XD, and Photoshop from scratch.</p>
           </div>
 
-          <div class="px-8 py-11 border border-emerald-500 hover:bg-emerald-500 hover:text-slate-900 rounded-xl seo">
-            <i class="fa-solid fa-earth-americas text-5xl"></i>
-            <h3 class="py-3 text-xl">SEO</h3>
-            <p class="text-lg text-gray-500">I Design website UI/UX using Figma, XD, and Photoshop from scratch.</p>
+          <div class="px-8 max-[639px]:px-8 sm:px-8 md:px-4 lg:px-4 xl:px-8 py-11 max-[639px]:py-11 sm:py-11 md:py-10 lg:py-6 xl:py-11 border border-emerald-500 hover:bg-emerald-500 hover:text-slate-900 rounded-xl seo">
+            <i class="fa-solid fa-earth-americas text-5xl lg:text-3xl"></i>
+            <h3 class="py-3 text-xl max-[639px]:text-lg sm:text-lg md:text-lg lg:text-lg">SEO</h3>
+            <p class="max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg text-gray-500">I Design website UI/UX using Figma, XD, and Photoshop from scratch.</p>
           </div>
         </div>
 
@@ -175,71 +176,71 @@
 
 
 
-      <section class="mt-20 px-10 pb-10 experience" id="experience">
+      <section class="mt-20 max-[639px]:mt-5 sm:mt-5 md:mt-5 lg:mt-20 px-10 pb-10 experience" id="experience">
         <span class="px-5 py-1.5 border border-gray-50 rounded-full text-xs uppercase">
           <i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
           Experience
         </span>
 
-        <h2 class="pr-10 py-10 font-sans text-5xl font-medium">Experience</h2>
+        <h2 class="pr-10 py-10 font-sans text-5xl max-[639px]:text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-medium">Experience</h2>
 
         <ul class="relative">
           <li class="before:content-[''] before:absolute before:w-3 before:h-3 before:bg-slate-600 hover:before:bg-emerald-500 before:rounded-full after:content-[''] after:bg-slate-600 after:absolute after:w-px after:h-full after:top-0 after:-z-10 after:ml-1.5">
-            <ul class="px-20 pt-0">
+            <ul class="px-20 max-[639px]:px-5 sm:px-5 md:px-10 lg:px-6">
               <li>
-                <p class="text-lg text-gray-500 year">2020 - 2021</p>
+                <p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-500 year">2020 - 2021</p>
               </li>
 
               <li>
-                <h3 class="pt-5 pb-2 font-sans text-3xl font-medium job-title">Framer Desinger & Developer</h3>
+                <h3 class="pt-5 max-[639px]:pt-3 sm:pt-3 md:pt-3 lg:pt-5 pb-2 font-sans text-3xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-3xl xl:text-3xl font-medium job-title">Framer Desinger & Developer</h3>
               </li>
 
               <li>
-                <a href="http://"><p class="text-lg text-gray-300 year organization-name">Brunodee Agency</p></a>
+                <a href="http://"><p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-300 year organization-name">Brunodee Agency</p></a>
               </li>
 
               <li>
-                <p class="pb-10 pr-60 text-gray-500 job-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-              </li>
-            </ul>
-          </li>
-
-          <li class="before:content-[''] before:absolute before:w-3 before:h-3 before:bg-slate-600 hover:before:bg-emerald-500 before:rounded-full after:content-[''] after:bg-slate-600 after:absolute after:w-px after:h-full after:top-0 after:-z-10 after:ml-1.5">
-            <ul class="px-20 pt-0">
-              <li>
-                <p class="text-lg text-gray-500 year">2020 - 2021</p>
-              </li>
-
-              <li>
-                <h3 class="pt-5 pb-2 font-sans text-3xl font-medium job-title">Framer Desinger & Developer</h3>
-              </li>
-
-              <li>
-                <a href="http://"><p class="text-lg text-gray-300 year organization-name">Brunodee Agency</p></a>
-              </li>
-
-              <li>
-                <p class="pb-10 pr-60 text-gray-500 job-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                <p class="pb-10 pr-60 max-[639px]:pr-0 sm:pr-0 md:pr-5 text-gray-500 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg lg:pr-5 job-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
               </li>
             </ul>
           </li>
 
           <li class="before:content-[''] before:absolute before:w-3 before:h-3 before:bg-slate-600 hover:before:bg-emerald-500 before:rounded-full after:content-[''] after:bg-slate-600 after:absolute after:w-px after:h-full after:top-0 after:-z-10 after:ml-1.5">
-            <ul class="px-20 pt-0">
+            <ul class="px-20 max-[639px]:px-5 sm:px-5 md:px-10 lg:px-6">
               <li>
-                <p class="text-lg text-gray-500 year">2020 - 2021</p>
+                <p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-500 year">2020 - 2021</p>
               </li>
 
               <li>
-                <h3 class="pt-5 pb-2 font-sans text-3xl font-medium job-title">Framer Desinger & Developer</h3>
+                <h3 class="pt-5 max-[639px]:pt-3 sm:pt-3 md:pt-3 lg:pt-5 pb-2 font-sans text-3xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-3xl xl:text-3xl font-medium job-title">Framer Desinger & Developer</h3>
               </li>
 
               <li>
-                <a href="http://"><p class="text-lg text-gray-300 year organization-name">Brunodee Agency</p></a>
+                <a href="http://"><p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-300 year organization-name">Brunodee Agency</p></a>
               </li>
 
               <li>
-                <p class="pb-10 pr-60 text-gray-500 job-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                <p class="pb-10 pr-60 max-[639px]:pr-0 sm:pr-0 md:pr-5 text-gray-500 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg lg:pr-5 job-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="before:content-[''] before:absolute before:w-3 before:h-3 before:bg-slate-600 hover:before:bg-emerald-500 before:rounded-full after:content-[''] after:bg-slate-600 after:absolute after:w-px after:h-full after:top-0 after:-z-10 after:ml-1.5">
+            <ul class="px-20 max-[639px]:px-5 sm:px-5 md:px-10 lg:px-6">
+              <li>
+                <p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-500 year">2020 - 2021</p>
+              </li>
+
+              <li>
+                <h3 class="pt-5 max-[639px]:pt-3 sm:pt-3 md:pt-3 lg:pt-5 pb-2 font-sans text-3xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-3xl xl:text-3xl font-medium job-title">Framer Desinger & Developer</h3>
+              </li>
+
+              <li>
+                <a href="http://"><p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-300 organization-name">Brunodee Agency</p></a>
+              </li>
+
+              <li>
+                <p class="pb-10 pr-60 max-[639px]:pr-0 sm:pr-0 md:pr-5 text-gray-500 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg lg:pr-5 job-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
               </li>
             </ul>
           </li>
@@ -250,91 +251,91 @@
 
 
 
-      <section class="mt-20 px-10 pb-10 education" id="education">
+      <section class="mt-20 max-[639px]:mt-5 sm:mt-5 md:mt-5 lg:mt-20 px-10 pb-10 education" id="education">
         <span class="px-5 py-1.5 border border-gray-50 rounded-full text-xs uppercase">
           <i class="fa-solid fa-graduation-cap"></i>&nbsp;&nbsp;&nbsp;
           Education
         </span>
 
-        <h2 class="pr-10 py-10 font-sans text-5xl font-medium">Education</h2>
+        <h2 class="pr-10 py-10 font-sans text-5xl max-[639px]:text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-medium">Education</h2>
 
         <ul class="relative">
           <li class="before:content-[''] before:absolute before:w-3 before:h-3 before:bg-slate-600 hover:before:bg-emerald-500 before:rounded-full after:content-[''] after:bg-slate-600 after:absolute after:w-px after:h-full after:top-0 after:-z-10 after:ml-1.5">
-            <ul class="px-20 pt-0">
+            <ul class="px-20 max-[639px]:px-5 sm:px-5 md:px-10 lg:px-6">
               <li>
-                <p class="text-lg text-gray-500 education-year">2001 - 2005</p>
+                <p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-500 education-year">2001 - 2005</p>
               </li>
 
               <li>
-                <h3 class="pt-5 pb-2 font-sans text-3xl font-medium education-level">Primary School Certificate</h3>
+                <h3 class="pt-5 max-[639px]:pt-3 sm:pt-3 md:pt-3 lg:pt-5 pb-2 font-sans text-3xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-3xl xl:text-3xl font-medium education-level">Primary School Certificate</h3>
               </li>
 
               <li>
-                <a href="http://"><p class="text-lg text-gray-300 year institute-name">9no. Moukuri Govt. Primary School</p></a>
+                <a href="http://"><p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-300 institute-name">9no. Moukuri Govt. Primary School</p></a>
               </li>
 
               <li>
-                <p class="pb-10 pr-60 text-gray-500 job-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-              </li>
-            </ul>
-          </li>
-
-          <li class="before:content-[''] before:absolute before:w-3 before:h-3 before:bg-slate-600 hover:before:bg-emerald-500 before:rounded-full after:content-[''] after:bg-slate-600 after:absolute after:w-px after:h-full after:top-0 after:-z-10 after:ml-1.5">
-            <ul class="px-20 pt-0">
-              <li>
-                <p class="text-lg text-gray-500 education-year">2006 - 2012</p>
-              </li>
-
-              <li>
-                <h3 class="pt-5 pb-2 font-sans text-3xl font-medium education-level">Secondary School Certificate</h3>
-              </li>
-
-              <li>
-                <a href="http://"><p class="text-lg text-gray-300 year institute-name">Pangsha George  pilot High School</p></a>
-              </li>
-
-              <li>
-                <p class="pb-10 pr-60 text-gray-500 job-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                <p class="pb-10 pr-60 max-[639px]:pr-0 sm:pr-0 md:pr-5 text-gray-500 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg lg:pr-5 education-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
               </li>
             </ul>
           </li>
 
           <li class="before:content-[''] before:absolute before:w-3 before:h-3 before:bg-slate-600 hover:before:bg-emerald-500 before:rounded-full after:content-[''] after:bg-slate-600 after:absolute after:w-px after:h-full after:top-0 after:-z-10 after:ml-1.5">
-            <ul class="px-20 pt-0">
+            <ul class="px-20 max-[639px]:px-5 sm:px-5 md:px-10 lg:px-6">
               <li>
-                <p class="text-lg text-gray-500 education-year">2012 - 2016</p>
+                <p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-500 education-year">2006 - 2012</p>
               </li>
 
               <li>
-                <h3 class="pt-5 pb-2 font-sans text-3xl font-medium education-level">Diploma in Computer Technology</h3>
+                <h3 class="pt-5 max-[639px]:pt-3 sm:pt-3 md:pt-3 lg:pt-5 pb-2 font-sans text-3xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-3xl xl:text-3xl font-medium education-level">Secondary School Certificate</h3>
               </li>
 
               <li>
-                <a href="http://"><p class="text-lg text-gray-300 year institute-name">Magura Politechnic Institute</p></a>
+                <a href="http://"><p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-300 institute-name">Pangsha George  pilot High School</p></a>
               </li>
 
               <li>
-                <p class="pb-10 pr-60 text-gray-500 job-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                <p class="pb-10 pr-60 max-[639px]:pr-0 sm:pr-0 md:pr-5 text-gray-500 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg lg:pr-5 education-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
               </li>
             </ul>
           </li>
 
           <li class="before:content-[''] before:absolute before:w-3 before:h-3 before:bg-slate-600 hover:before:bg-emerald-500 before:rounded-full after:content-[''] after:bg-slate-600 after:absolute after:w-px after:h-full after:top-0 after:-z-10 after:ml-1.5">
-            <ul class="px-20 pt-0">
+            <ul class="px-20 max-[639px]:px-5 sm:px-5 md:px-10 lg:px-6">
               <li>
-                <p class="text-lg text-gray-500 education-year">2020 - present</p>
+                <p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-500 education-year">2012 - 2016</p>
               </li>
 
               <li>
-                <h3 class="pt-5 pb-2 font-sans text-3xl font-medium education-level">BSC in Computer Science and Engineering</h3>
+                <h3 class="pt-5 max-[639px]:pt-3 sm:pt-3 md:pt-3 lg:pt-5 pb-2 font-sans text-3xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-3xl xl:text-3xl font-medium education-level">Diploma in Computer Technology</h3>
               </li>
 
               <li>
-                <a href="http://"><p class="text-lg text-gray-300 year institute-name">City University</p></a>
+                <a href="http://"><p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-300 institute-name">Magura Politechnic Institute</p></a>
               </li>
 
               <li>
-                <p class="pb-10 pr-60 text-gray-500 job-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                <p class="pb-10 pr-60 max-[639px]:pr-0 sm:pr-0 md:pr-5 text-gray-500 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg lg:pr-5 education-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="before:content-[''] before:absolute before:w-3 before:h-3 before:bg-slate-600 hover:before:bg-emerald-500 before:rounded-full after:content-[''] after:bg-slate-600 after:absolute after:w-px after:h-full after:top-0 after:-z-10 after:ml-1.5">
+            <ul class="px-20 max-[639px]:px-5 sm:px-5 md:px-10 lg:px-6">
+              <li>
+                <p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-500 education-year">2020 - present</p>
+              </li>
+
+              <li>
+                <h3 class="pt-5 max-[639px]:pt-3 sm:pt-3 md:pt-3 lg:pt-5 pb-2 font-sans text-3xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-3xl xl:text-3xl font-medium education-level">BSC in Computer Science and Engineering</h3>
+              </li>
+
+              <li>
+                <a href="http://"><p class="text-lg max-[639px]:text-sm sm:text-sm md:text-lg text-gray-300 institute-name">City University</p></a>
+              </li>
+
+              <li>
+                <p class="pb-10 pr-60 max-[639px]:pr-0 sm:pr-0 md:pr-5 text-gray-500 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-lg text-lg lg:pr-5 education-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
               </li>
             </ul>
           </li>
@@ -346,15 +347,15 @@
 
 
 
-      <section class="mt-20 px-10 pb-10 skills" id="skills">
+      <section class="mt-20 max-[639px]:mt-5 sm:mt-5 md:mt-5 lg:mt-20 px-10 pb-10 skills" id="skills">
         <span class="px-5 py-1.5 border border-gray-50 rounded-full text-xs uppercase">
           <i class="fa-solid fa-shapes"></i>&nbsp;&nbsp;&nbsp;
           Skills
         </span>
 
-        <h2 class="pr-10 py-10 font-sans text-5xl font-medium">My <span class="text-emerald-500">Advantages</span></h2>
+        <h2 class="pr-10 py-10 font-sans text-5xl max-[639px]:text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-medium">My <span class="text-emerald-500">Advantages</span></h2>
 
-        <div class="grid grid-cols-6 gap-5">
+        <div class="grid max-[639px]:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-6 grid-cols-6 gap-4">
           <div class="py-9 flex justify-center border border-emerald-500 rounded-xl html">
             <div class="pr-3 skill-identity-logo">
               <img src="./images/html-loho.png" class="w-12" alt="html skill" srcset="">
@@ -483,72 +484,72 @@
 
 
 
-      <section class="mt-20 px-10 pb-10 portfolio" id="portfolio">
+      <section class="mt-20 max-[639px]:mt-5 sm:mt-5 md:mt-5 lg:mt-20 px-10 pb-10 portfolio" id="portfolio">
         <span class="px-5 py-1.5 border border-gray-50 rounded-full text-xs uppercase">
           <i class="fa-solid fa-grip-vertical"></i>&nbsp;&nbsp;&nbsp;
           Portfolio
         </span>
 
-        <h2 class="pr-10 py-10 font-sans text-5xl font-medium">Project I Done <span class="text-emerald-500">#portfolio</span></h2>
+        <h2 class="pr-10 py-10 font-sans text-5xl max-[639px]:text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-medium">Project I Done <span class="text-emerald-500">#portfolio</span></h2>
 
         <div class="project-showcase">
 
           <div class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl project">
-            <div class="grid grid-cols-3 gap-4">
-              <div class="project-title-description">
+            <div class="grid max-[639px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 grid-cols-3 gap-4">
+              <div class="max-[639px]:order-2 sm:order-2 md:order-3 lg:order-2 xl:order-1 order-1 project-title-description">
                 <h4 class="text-xl text-emerald-500 font-semibold">Financial Alfa</h4>
-                <p class="py-4 text-gray-500 ">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
+                <p class="py-4 text-gray-500 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm text-sm">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
                 <a href="http://" type="button" class="px-6 py-2 bg-emerald-500 text-slate-900 text-center font-mono font-medium uppercase rounded-xl border border-emerald-500 hover:bg-slate-900 hover:text-gray-50">Read more</a>
               </div>
-              <div class="project-tags">
+              <div class="max-[639px]:order-3 sm:order-3 md:order-3 lg:order-3 xl:order-2 order-2 project-tags">
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">html</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">css</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">js</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">php</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">wordpress</span>
               </div>
-              <div class="w-4/5 project-image">
-                <img src="./images/project-1.jpg" class="rounded-3xl" alt="ptoject one" srcset="">
+              <div class="w-4/5 max-[639px]:w-full sm:w-full md:w-full max-[639px]:order-1 sm:order-1 md:order-3 lg:order-1 xl:order-3 order-3 project-image">
+                <img src="./images/project-1.jpg" class="object-cover max-[639px]:rounded-3xl sm:rounded-3xl md:rounded-3xl rounded-3xl" alt="ptoject one" srcset="">
               </div>
             </div>
           </div>
 
           <div class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl project">
-            <div class="grid grid-cols-3 gap-4">
-              <div class="project-title-description">
+            <div class="grid max-[639px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 grid-cols-3 gap-4">
+              <div class="max-[639px]:order-2 sm:order-2 md:order-3 lg:order-2 xl:order-1 order-1 project-title-description">
                 <h4 class="text-xl text-emerald-500 font-semibold">Coffee Cup Landing PAge</h4>
-                <p class="py-4 text-gray-500 ">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
+                <p class="py-4 text-gray-500 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm text-sm">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
                 <a href="http://" type="button" class="px-6 py-2 bg-emerald-500 text-slate-900 text-center font-mono font-medium uppercase rounded-xl border border-emerald-500 hover:bg-slate-900 hover:text-gray-50">Read more</a>
               </div>
-              <div class="project-tags">
+              <div class="max-[639px]:order-3 sm:order-3 md:order-3 lg:order-3 xl:order-2 order-2 project-tags">
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">html</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">css</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">js</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">php</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">wordpress</span>
               </div>
-              <div class="w-4/5 project-image">
-                <img src="./images/project-2.jpg" class="rounded-3xl" alt="ptoject one" srcset="">
+              <div class="w-4/5 max-[639px]:w-full sm:w-full md:w-full max-[639px]:order-1 sm:order-1 md:order-3 lg:order-1 xl:order-3 order-3 project-image">
+                <img src="./images/project-2.jpg" class="object-cover max-[639px]:rounded-3xl sm:rounded-3xl md:rounded-3xl rounded-3xl" alt="ptoject one" srcset="">
               </div>
             </div>
           </div>
 
           <div class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl project">
-            <div class="grid grid-cols-3 gap-4">
-              <div class="project-title-description">
+            <div class="grid max-[639px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 grid-cols-3 gap-4">
+              <div class="max-[639px]:order-2 sm:order-2 md:order-3 lg:order-2 xl:order-1 order-1 project-title-description">
                 <h4 class="text-xl text-emerald-500 font-semibold">Litho Ecommerce Service</h4>
-                <p class="py-4 text-gray-500 ">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
+                <p class="py-4 text-gray-500 max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm text-sm">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
                 <a href="http://" type="button" class="px-6 py-2 bg-emerald-500 text-slate-900 text-center font-mono font-medium uppercase rounded-xl border border-emerald-500 hover:bg-slate-900 hover:text-gray-50">Read more</a>
               </div>
-              <div class="project-tags">
+              <div class="max-[639px]:order-3 sm:order-3 md:order-3 lg:order-3 xl:order-2 order-2 project-tags">
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">html</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">css</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">js</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">php</span>
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">wordpress</span>
               </div>
-              <div class="w-4/5 project-image">
-                <img src="./images/project-3.jpg" class="rounded-3xl" alt="ptoject one" srcset="">
+              <div class="w-4/5 max-[639px]:w-full sm:w-full md:w-full max-[639px]:order-1 sm:order-1 md:order-3 lg:order-1 xl:order-3 order-3 project-image">
+                <img src="./images/project-3.jpg" class="object-cover max-[639px]:rounded-3xl sm:rounded-3xl md:rounded-3xl rounded-3xl" alt="ptoject one" srcset="">
               </div>
             </div>
           </div>
@@ -560,13 +561,13 @@
 
 
 
-      <section class="mt-20 px-10 pb-10 testimonial" id="testimonial">
+      <section class="mt-20 max-[639px]:mt-5 sm:mt-5 md:mt-5 lg:mt-20 px-10 pb-10 testimonial" id="testimonial">
         <span class="px-5 py-1.5 border border-gray-50 rounded-full text-xs uppercase">
           <i class="fa-solid fa-comments"></i>&nbsp;&nbsp;&nbsp;
           testimonial
         </span>
 
-        <h2 class="pr-10 py-10 font-sans text-5xl font-medium">Trusted by more than <span class="text-emerald-500">Hundred Clients</span></h2>
+        <h2 class="pr-10 py-10 font-sans text-5xl max-[639px]:text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-medium">Trusted by more than <span class="text-emerald-500">Hundred Clients</span></h2>
 
         <div class="grid grid-cols-2 gap-4 owl-carousel project-showcase">
           <div class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl project">
@@ -580,7 +581,7 @@
               </div>
             </div>
             <div class="pt-6 project-tags">                
-              <p class="text-gray-500 text-xl"><i class="fa-solid fa-quote-left text-gray-50 text-2xl"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At delectus commodi illum nesciunt enim nostrum, exercitationem quam. Officia quam iusto, aliquam enim eaque porro? Distinctio ullam inventore quia iusto aspernatur.<i class="fa-solid fa-quote-right text-gray-50 text-2xl"></i></p>                
+              <p class="text-gray-500 max-[639px]:text-lg sm:text-lg md:text-lg lg:text-xl xl:text-xl text-xl"><i class="fa-solid fa-quote-left text-gray-50 text-2xl"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At delectus commodi illum nesciunt enim nostrum, exercitationem quam. Officia quam iusto, aliquam enim eaque porro? Distinctio ullam inventore quia iusto aspernatur.<i class="fa-solid fa-quote-right text-gray-50 text-2xl"></i></p>                
             </div>
           </div>
 
@@ -651,7 +652,7 @@
           <h3 class="text-gray-100 tracking-widest">WORK WITH 60+ BRANDS WORLDWIDE</h3>
 
 
-          <div class="grid grid-cols-6 gap-5 my-10">
+          <div class="grid max-[639px]:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-6 grid-cols-6 gap-5 my-10">
             <div class="py-9 flex justify-center border border-emerald-500 rounded-xl opacity-25 hover:opacity-100">
               <div class="pr-3 skill-identity-logo">
                 <img src="./images/client-1.png" class="w-full" alt="client name and country" srcset="">
@@ -708,13 +709,13 @@
 
 
 
-      <section class="mt-20 px-10 pb-10 testimonial" id="contact">
+      <section class="mt-20 max-[639px]:mt-5 sm:mt-5 md:mt-5 lg:mt-20 px-10 pb-10 testimonial" id="contact">
         <span class="px-5 py-1.5 border border-gray-50 rounded-full text-xs uppercase">
           <i class="fa-solid fa-comments"></i>&nbsp;&nbsp;&nbsp;
           Contact
         </span>
 
-        <h2 class="pr-10 py-10 font-sans text-5xl font-medium">Let's Work <span class="text-emerald-500">Together!</span></h2>
+        <h2 class="pr-10 py-10 font-sans text-5xl max-[639px]:text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-medium">Let's Work <span class="text-emerald-500">Together!</span></h2>
 
         <div class="flex justify-center upwork-contact">
           <a href="https://www.upwork.com/freelancers/~018664469579b8cdab" class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl">
@@ -726,14 +727,14 @@
 
 
 
-    <div class="mx-11 my-12 col-span-3 profile" id="profile">
-      <div class="px-10 py-16 text-gray-50 border border-gray-50 rounded-3xl profile-content">
+    <div class="max-[639px]:mx-4 max-[639px]:my-5 sm:mx-4 md:mx-11 lg:mx-11 xl:mx-11 my-12 sm:col-span-12 md:col-span-12 lg:col-span-4 xl:col-span-3 max-[639px]:order-1 sm:order-1 md:order-1 lg:order-3 xl:order-3 max-[639px]:col-span-12 lg:relative xl:relative 2xl:relative  profile" id="profile">
+      <div class="max-[639px]:px-4 max-[639px]:py-8 sm:px-10 md:px-10 lg:px-5 xl:px-10 sm:py-16 md:py-16 lg:py-8 xl:py-16 text-gray-50 border border-gray-50 rounded-3xl lg:fixed xl:fixed 2xl:fixed profile-content">
         <div class="grid grid-cols-2 gap-4 logo-profession">
-          <div class="logo w-32">
-            <img src="./images/antu-paul-logo.png" alt="Antu paul logo" srcset="">
+          <div class="sm:w-2/4 md:w-2/4 lg:3/4 xl:2/4 logo">
+            <img src="./images/antu-paul-logo.png" class="w-full object-cover" alt="Antu paul logo" srcset="">
           </div>
           <div class="justify-items-center profession">
-            <p class="pt-3 text-sm text-right">Wordpress & Shopify Expert</p>
+            <p class="pt-3 sm:text-sm md:text-sm lg:text-xs xl:text-xs text-right">Wordpress & Shopify Expert</p>
           </div>
         </div>
 
@@ -742,8 +743,8 @@
         </div>
 
         <div class="name-mail">
-          <h3 class="text-2xl text-center">Antu Paul</h3>
-          <h4 class="text-xl text-center">antupaul81@gmail.com</h4>
+          <h3 class="sm:text-2xl md:text-2xl lg:text-xl xl:text-2xl 2xl:text-xl text-center">Antu Paul</h3>
+          <h4 class="sm:text-xl md:text-xl lg:text-sm xl:text-xl 2xl:text-sm text-center">antupaul81@gmail.com</h4>
         </div>
 
         <div class="py-6 copyright">
@@ -752,31 +753,31 @@
 
         <div class="social-icons">
           <ul class="flex justify-center">
-            <li class="mx-1 w-10 h-10 px-3.5 py-1 border-2 rounded-full hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
+            <li class="mx-1 w-10 h-10 px-3.5 py-1 border rounded-full hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-facebook-f text-xs"></i>
               </a>
             </li>
   
-            <li class="mx-1 w-10 h-10 px-3 py-1 border-2 rounded-full hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
+            <li class="mx-1 w-10 h-10 px-3.5 py-1 border rounded-full hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram text-xs"></i>
               </a>
             </li>
   
-            <li class="mx-1 w-10 h-10 px-3 py-1 border-2 rounded-full hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
+            <li class="mx-1 w-10 h-10 px-3.5 py-1 border rounded-full hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin text-xs"></i>
               </a>
             </li>
   
-            <li class="mx-1 w-10 h-10 px-3 py-1 border-2 rounded-full hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
+            <li class="mx-1 w-10 h-10 px-3.5 py-1 border rounded-full hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-x-twitter text-xs"></i>
               </a>
             </li>
   
-            <li class="mx-1 w-10 h-10 px-3 py-1 border-2 rounded-full hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
+            <li class="mx-1 w-10 h-10 px-3.5 py-1 border rounded-full hover:text-emerald-500 hover:border-emerald-500 transition duration-0 hover:duration-500">
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github text-xs"></i>
               </a>
@@ -785,9 +786,9 @@
         </div>
   
         <div class="my-7 text-center hire-me">
-          <a href="http://" class="mt-3 px-20 py-3 border-2 border-emerald-500 rounded-full bg-emerald-500 hover:bg-slate-900">
+          <a href="http://" class="mt-3 max-[639px]:px-16 sm:px-20 md:px-20 lg:px-5 xl:px-5 2xl:px-5 py-3 border-2 border-emerald-500 rounded-full bg-emerald-500 hover:bg-slate-900">
             <i class="fa-solid fa-envelope"></i>
-            &nbsp;&nbsp;&nbsp; HIRE ME!
+             HIRE ME!
           </a>
         </div>
       </div>

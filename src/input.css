@@ -16,3 +16,12 @@
     border: 1px solid #10B981;
     border-radius: 12px;
 }
+.navbar{
+    margin-top: 150px;
+}
+
+@media (min-width: 800px) {
+    .profile-content{
+        margin-right: 10px;
+    }
+}
