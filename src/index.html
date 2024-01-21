@@ -117,14 +117,18 @@
           user-friendly experiences. My passion lies in developing outstanding software that positively impacts the
           lives of those in my circle.</p>
 
-        <div class="flex justify-end relative project-indicator">
-          <div class="project-indicator-animator">
-            <img src="./images/my-projects.png" class="rounded-full mr-1" alt="My projects" srcset="">
+        
+        <a href="#contact">
+          <div class="flex justify-end relative project-indicator">
+            <div class="project-indicator-animator">
+              <img src="./images/my-projects.png" class="rounded-full mr-1" alt="My projects" srcset="">
+            </div>
+            <div class="absolute top-16 right-16 project-indicator-icon">
+              <i class="fa-solid fa-angles-down text-2xl animate-bounce"></i>
+            </div>
           </div>
-          <div class="absolute top-16 right-16 project-indicator-icon">
-            <i class="fa-solid fa-angles-down text-2xl animate-bounce"></i>
-          </div>
-        </div>
+        </a>
+        
 
         <div class="grid grid-cols-5 gap-4 experience-project-counter">
           <div class="experience">
@@ -741,15 +745,20 @@
           class="pr-10 py-10 font-sans text-5xl max-[639px]:text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-medium">
           Trusted by more than <span class="text-emerald-500">Hundred Clients</span></h2>
 
-        <div class="grid grid-cols-2 gap-4 owl-carousel project-showcase">
+        <div class="owl-carousel project-showcase">
           <div class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl project">
-            <div class="flex justify-start client-identity">
-              <div class=" mr-4 client-display-image">
-                <img src="./images/testimonial-1.jpg" alt="client image" class="w-14 h-14 rounded-full" srcset="">
+            <div class="flex justify-between client-rating">
+              <div class="flex justify-start client-identity">
+                <div class=" mr-4 client-display-image">
+                  <img src="./images/testimonial-1.jpg" alt="client image" class="w-14 h-14 rounded-full" srcset="">
+                </div>
+                <div class="client-name-country">
+                  <h4 class="text-xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl text-emerald-500 font-semibold">Smith</h4>
+                  <p class="text-gray-500 text-sm max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">fom <span class="text-emerald-500">Canada</span></p>
+                </div>
               </div>
-              <div class="client-name-country">
-                <h4 class="text-xl text-emerald-500 font-semibold">Smith</h4>
-                <p class="text-gray-500 ">fom <span class="text-emerald-500">Canada</span></p>
+              <div class="flex justify-end ratings">
+                <h2 class="text-5xl text-emerald-500">5/5</h2>
               </div>
             </div>
             <div class="pt-6 project-tags">
@@ -762,13 +771,42 @@
           </div>
 
           <div class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl project">
-            <div class="flex justify-start client-identity">
-              <div class=" mr-4 client-display-image">
-                <img src="./images/testimonial-2.jpg" alt="client image" class="w-14 h-14 rounded-full" srcset="">
+            <div class="flex justify-between client-rating">
+              <div class="flex justify-start client-identity">
+                <div class=" mr-4 client-display-image">
+                  <img src="./images/testimonial-2.jpg" alt="client image" class="w-14 h-14 rounded-full" srcset="">
+                </div>
+                <div class="client-name-country">
+                  <h4 class="text-xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl text-emerald-500 font-semibold">Smith</h4>
+                  <p class="text-gray-500 text-sm max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">fom <span class="text-emerald-500">Canada</span></p>
+                </div>
               </div>
-              <div class="client-name-country">
-                <h4 class="text-xl text-emerald-500 font-semibold">Smith</h4>
-                <p class="text-gray-500 ">fom <span class="text-emerald-500">Canada</span></p>
+              <div class="flex justify-end ratings">
+                <h2 class="text-5xl text-emerald-500">5/5</h2>
+              </div>
+            </div>
+            
+            <div class="pt-6 project-tags">
+              <p class="text-gray-500 text-xl"><i class="fa-solid fa-quote-left text-gray-50 text-2xl"></i>Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. At delectus commodi illum nesciunt enim nostrum,
+                exercitationem quam. Officia quam iusto, aliquam enim eaque porro? Distinctio ullam inventore quia iusto
+                aspernatur.<i class="fa-solid fa-quote-right text-gray-50 text-2xl"></i></p>
+            </div>
+          </div>
+
+          <div class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl project">
+            <div class="flex justify-between client-rating">
+              <div class="flex justify-start client-identity">
+                <div class=" mr-4 client-display-image">
+                  <img src="./images/testimonial-3.jpg" alt="client image" class="w-14 h-14 rounded-full" srcset="">
+                </div>
+                <div class="client-name-country">
+                  <h4 class="text-xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl text-emerald-500 font-semibold">Smith</h4>
+                  <p class="text-gray-500 text-sm max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">fom <span class="text-emerald-500">Canada</span></p>
+                </div>
+              </div>
+              <div class="flex justify-end ratings">
+                <h2 class="text-5xl text-emerald-500">5/5</h2>
               </div>
             </div>
             <div class="pt-6 project-tags">
@@ -780,31 +818,18 @@
           </div>
 
           <div class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl project">
-            <div class="flex justify-start client-identity">
-              <div class=" mr-4 client-display-image">
-                <img src="./images/testimonial-3.jpg" alt="client image" class="w-14 h-14 rounded-full" srcset="">
+            <div class="flex justify-between client-rating">
+              <div class="flex justify-start client-identity">
+                <div class=" mr-4 client-display-image">
+                  <img src="./images/testimonial-1.jpg" alt="client image" class="w-14 h-14 rounded-full" srcset="">
+                </div>
+                <div class="client-name-country">
+                  <h4 class="text-xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl text-emerald-500 font-semibold">Smith</h4>
+                  <p class="text-gray-500 text-sm max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">fom <span class="text-emerald-500">Canada</span></p>
+                </div>
               </div>
-              <div class="client-name-country">
-                <h4 class="text-xl text-emerald-500 font-semibold">Smith</h4>
-                <p class="text-gray-500 ">fom <span class="text-emerald-500">Canada</span></p>
-              </div>
-            </div>
-            <div class="pt-6 project-tags">
-              <p class="text-gray-500 text-xl"><i class="fa-solid fa-quote-left text-gray-50 text-2xl"></i>Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. At delectus commodi illum nesciunt enim nostrum,
-                exercitationem quam. Officia quam iusto, aliquam enim eaque porro? Distinctio ullam inventore quia iusto
-                aspernatur.<i class="fa-solid fa-quote-right text-gray-50 text-2xl"></i></p>
-            </div>
-          </div>
-
-          <div class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl project">
-            <div class="flex justify-start client-identity">
-              <div class=" mr-4 client-display-image">
-                <img src="./images/testimonial-1.jpg" alt="client image" class="w-14 h-14 rounded-full" srcset="">
-              </div>
-              <div class="client-name-country">
-                <h4 class="text-xl text-emerald-500 font-semibold">Smith</h4>
-                <p class="text-gray-500 ">fom <span class="text-emerald-500">Canada</span></p>
+              <div class="flex justify-end ratings">
+                <h2 class="text-5xl text-emerald-500">5/5</h2>
               </div>
             </div>
             <div class="pt-6 project-tags">
@@ -816,13 +841,18 @@
           </div>
 
           <div class="my-5 px-6 py-8 border border-emerald-500 rounded-3xl project">
-            <div class="flex justify-start client-identity">
-              <div class=" mr-4 client-display-image">
-                <img src="./images/testimonial-2.jpg" alt="client image" class="w-14 h-14 rounded-full" srcset="">
+            <div class="flex justify-between client-rating">
+              <div class="flex justify-start client-identity">
+                <div class=" mr-4 client-display-image">
+                  <img src="./images/testimonial-2.jpg" alt="client image" class="w-14 h-14 rounded-full" srcset="">
+                </div>
+                <div class="client-name-country">
+                  <h4 class="text-xl max-[639px]:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl text-emerald-500 font-semibold">Smith</h4>
+                  <p class="text-gray-500 text-sm max-[639px]:text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">fom <span class="text-emerald-500">Canada</span></p>
+                </div>
               </div>
-              <div class="client-name-country">
-                <h4 class="text-xl text-emerald-500 font-semibold">Smith</h4>
-                <p class="text-gray-500 ">fom <span class="text-emerald-500">Canada</span></p>
+              <div class="flex justify-end ratings">
+                <h2 class="text-5xl text-emerald-500">5/5</h2>
               </div>
             </div>
             <div class="pt-6 project-tags">
@@ -1116,7 +1146,13 @@
           600: {
             items: 1
           },
-          1000: {
+          1024: {
+            items: 1
+          },
+          1280: {
+            items: 2
+          },
+          1536: {
             items: 2
           }
         }
